@@ -193,6 +193,7 @@ def num_points_scored (playa_name)
     v_team_main_hash[:players].each do |v_player_hash|
       if v_player_hash[:shoe] > lagrest_dang_shoe
         largest_dang_shoe = v_player_hash[:shoe]
+        rebounds = v_player_hash[:rebounds]
       end
     end
 

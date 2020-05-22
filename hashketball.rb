@@ -198,4 +198,5 @@ def num_points_scored (playa_name)
     end
 
   end
+  rebounds
 end

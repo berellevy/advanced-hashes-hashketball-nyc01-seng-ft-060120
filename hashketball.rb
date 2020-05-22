@@ -190,16 +190,17 @@ end
 
 def big_shoe_rebounds
   lagrest_dang_shoe = 0
-  rebounds = 0
+  rebounds = []
   game_hash.each do |k_team_provenance, v_team_main_hash|
     v_team_main_hash[:players].each do |v_player_hash|
       if v_player_hash[:shoe] > lagrest_dang_shoe
         largest_dang_shoe = v_player_hash[:shoe]
-        rebounds = v_player_hash[:rebounds]
-        binding.pry
+        rebounds << v_player_hash[:rebounds]
+        
       end
     end
 
   end
   rebounds
+  binding.pry
 end

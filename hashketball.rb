@@ -191,8 +191,8 @@ def num_points_scored (playa_name)
   lagrest_dang_shoe = 0
   game_hash.each do |k_team_provenance, v_team_main_hash|
     v_team_main_hash[:players].each do |v_player_hash|
-      if v_player_hash[:player_name] == playa_name
-        return v_player_hash[:points]
+      if v_player_hash[:shoe] > lagrest_dang_shoe
+        largest_dang_shoe = v_player_hash[:shoe]
       end
     end
 

@@ -196,6 +196,7 @@ def big_shoe_rebounds
       binding.pry
       if v_player_hash[:shoe] > lagrest_dang_shoe
         largest_dang_shoe = v_player_hash[:shoe]
+        binding.pry
         rebounds << v_player_hash[:rebounds]
 
       end

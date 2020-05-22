@@ -189,6 +189,7 @@ end
 
 def big_shoe_rebounds
   lagrest_dang_shoe = 0
+  rebounds = 0
   game_hash.each do |k_team_provenance, v_team_main_hash|
     v_team_main_hash[:players].each do |v_player_hash|
       if v_player_hash[:shoe] > lagrest_dang_shoe

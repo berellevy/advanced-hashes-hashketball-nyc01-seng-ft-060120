@@ -189,7 +189,7 @@ def player_stats (playa_name)
 end
 
 def big_shoe_rebounds
-  lagrest_dang_shoe = 0
+  largest_dang_shoe = 0
   rebounds = []
   game_hash.each do |k_team_provenance, v_team_main_hash|
     v_team_main_hash[:players].each do |v_player_hash|

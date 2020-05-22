@@ -195,7 +195,7 @@ def big_shoe_rebounds
     v_team_main_hash[:players].each do |v_player_hash|
       if v_player_hash[:shoe] > largest_dang_shoe
         largest_dang_shoe = v_player_hash[:shoe]
-        rebounds << v_player_hash[:rebounds]
+        rebounds = v_player_hash[:rebounds]
       end
     end
 
